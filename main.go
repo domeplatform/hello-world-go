@@ -25,5 +25,5 @@ func main() {
 		fmt.Fprintln(w, INDEX)
 	})
 
-	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), router))
+	http.ListenAndServe(":"+os.Getenv("PORT"), router)
 }
