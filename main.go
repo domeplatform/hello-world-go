@@ -25,6 +25,4 @@ func main() {
 	})
 
 	http.ListenAndServe(":"+os.Getenv("PORT"), router)
-
-        for {}
 }
